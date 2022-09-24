@@ -200,9 +200,9 @@ public class Silly implements Comparable<Silly>{
          *                .length() method.
          */
         if (this.name.length() > other.name.length()) {
-            return this.name.length() - other.name.length();
+            return 1;
         } else if (other.name.length() > this.name.length()) {
-            return other.name.length() - this.name.length();
+            return -1;
         } else {
             return 0;
         }
